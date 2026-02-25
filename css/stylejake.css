@@ -6,30 +6,48 @@ body {
     padding-left: 20px;
 }
 
-.header {
+.profile {
     text-align: left;
     padding: 20px 20px 30px;
     background-color: white;
 }
 
-.header h1 {
+.profile h1 {
     font-size: 30px;
     font-weight: 600;
     margin-top: 8px;
     color: #111;
 }
 
-.header h4 {
+.profile h4 {
     font-weight: 400;
     color: #666;
     margin-bottom: 20px;
 }
 
-img {
+
+.id-picture {
     width: 130px;
     border-radius: 50%;
     object-fit: cover;
 }
+
+
+
+.slide img {
+    width: 200px;                    
+    border-radius: 8px;
+    scroll-snap-align: start;
+    flex-shrink: 0;                   
+    cursor: pointer;                
+    transition: transform 0.3s;      
+}
+
+
+.slide img:hover {
+    transform: scale(1.05);          
+}
+
 
 .tools {
     text-align: center;
@@ -41,6 +59,7 @@ img {
     display: block;
     border-radius: 8px;
 }
+
 
 .projects {
     text-align: center;
