@@ -1,35 +1,138 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fdfdfd;
-    color: #333;
-    line-height: 1.6;
-    padding-left: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    height: 100%;
+    margin: auto;
+    
 }
 
 .header {
-    text-align: left;
-    padding: 20px 20px 30px;
-    background-color: white;
+    height: 100vh;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .header h1 {
-    font-size: 30px;
-    font-weight: 600;
-    margin-top: 8px;
-    color: #111;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
 }
 
-.header h4 {
-    font-weight: 400;
+.subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
     color: #666;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.header img {
-    width: 130px;
-    border-radius: 50%;
-    display: inline-flexbox;
-    margin: 0 auto;
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid black;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background: black;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+.header-contact {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+}
+
+.header-contact p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #555;
+}
+
+.about {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 20px;
+}
+
+.container section {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    outline: 2px solid #000000;
+}
+
+.container h3 {
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.container li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.tools {
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
 }
 
 .tools {
@@ -37,7 +140,7 @@ body {
 }
 
 .tools img {
-    width: 700px;          
+    width: 200px;          
     margin: 40px auto;
     display: block;
     border-radius: 8px;
@@ -67,3 +170,12 @@ body {
     filter: blur(4px);
     z-index: -1;
 }
+
+.tagline {
+    font-size: 100px;
+    margin: 1%;
+}    
+
+.highlight {
+    color: red;
+}    
