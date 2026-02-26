@@ -160,24 +160,15 @@ body {
     z-index: 1;
 }
 
-.projects img::after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 10%;
-    width: 80%;
-    height: 12px;
-    background: rgba(0, 0, 0, 0.15);
-    border-radius: 50%;
-    filter: blur(4px);
-    z-index: -1;
-}
-
 .tagline {
     font-size: 100px;
     margin: 1%;
 }    
 
 .highlight {
-    color: red;
+    color: rgb(33, 59, 90);
+}    
+
+.highlight1 {
+    color: rgb(241, 148, 148);
 }    
