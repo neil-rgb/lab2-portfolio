@@ -3,9 +3,12 @@ body {
     height: 100vh;
     background-color: white;
     text-align: center;
-    padding: 50px 30px;
+    padding: 200px 30px;
     margin: 0%;
     justify-content: center;
+    align-items: center;
+    overflow-x:hidden ;
+    overflow-y:hidden;
 }
 
 h1 {
@@ -23,7 +26,9 @@ ul {
    
  .box {
     display: block;
-    width: 300px;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
     margin: 15px auto;
     padding: 15px;
     border: 2px solid black;
