@@ -1,8 +1,11 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    background-color: white;
     text-align: center;
     padding: 50px 30px;
+    margin: 0%;
+    justify-content: center;
 }
 
 h1 {
@@ -27,6 +30,8 @@ ul {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .box:hover {
